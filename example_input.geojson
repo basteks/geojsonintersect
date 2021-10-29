@@ -1,0 +1,137 @@
+{
+	"features": [
+		{
+			"geometry": {
+				"coordinates": [
+					[
+						0.0,
+						0.0
+					],
+					[
+						60.0,
+						-0.0
+					],
+					[
+						60.0,
+						20.0
+					],
+					[
+						0.0,
+						20.0
+					],
+					[
+						0.0,
+						0.0
+					]
+				],
+				"type": "LineString"
+			},
+			"properties": {
+				"EntityHandle": "26E",
+				"Layer": "0",
+				"SubClasses": "AcDbEntity:AcDbPolyline"
+			},
+			"type": "Feature"
+		},
+		{
+			"geometry": {
+				"coordinates": [
+					[
+						0.0,
+						40.0
+					],
+					[
+						60.0,
+						40.0
+					],
+					[
+						60.0,
+						60.0
+					],
+					[
+						0.0,
+						60.0
+					],
+					[
+						0.0,
+						40.0
+					]
+				],
+				"type": "LineString"
+			},
+			"properties": {
+				"EntityHandle": "275",
+				"Layer": "0",
+				"SubClasses": "AcDbEntity:AcDbPolyline"
+			},
+			"type": "Feature"
+		},
+		{
+			"geometry": {
+				"coordinates": [
+					[
+						0.0,
+						20.0
+					],
+					[
+						20.0,
+						20.0
+					],
+					[
+						20.0,
+						40.0
+					],
+					[
+						0.0,
+						40.0
+					],
+					[
+						0.0,
+						20.0
+					]
+				],
+				"type": "LineString"
+			},
+			"properties": {
+				"EntityHandle": "277",
+				"Layer": "0",
+				"SubClasses": "AcDbEntity:AcDbPolyline"
+			},
+			"type": "Feature"
+		},
+		{
+			"geometry": {
+				"coordinates": [
+					[
+						40.0,
+						20.0
+					],
+					[
+						60.0,
+						20.0
+					],
+					[
+						60.0,
+						40.0
+					],
+					[
+						40.0,
+						40.0
+					],
+					[
+						40.0,
+						20.0
+					]
+				],
+				"type": "LineString"
+			},
+			"properties": {
+				"EntityHandle": "278",
+				"Layer": "0",
+				"SubClasses": "AcDbEntity:AcDbPolyline"
+			},
+			"type": "Feature"
+		}
+	],
+	"type": "FeatureCollection"
+}
