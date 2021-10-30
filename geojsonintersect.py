@@ -79,3 +79,4 @@ def add_junctions(featcol):
             print(featcol.features[newFeatures.index(elm)])
     else:
         print('error !') # TODO : more explicit message and method to handle this case
+    return junctions
