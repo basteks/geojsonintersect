@@ -17,13 +17,16 @@ Conversely, **if two lines crosses without sharing the intersecting point, the j
 ---
 The file `geojsonintersect.py` only contains two functions : 
 - `cutAtPpoint` which enables to cut a geometry at a specified point. You don't need to call this function by yourself as it is called by the main function called `add_junctions`
-- the main function `add_junctions`, which takes a GeoJSON `FeatureCollection` as parameter.
+- the main function `add_junctions`, which takes a GeoJSON `FeatureCollection` as parameter, and returns a list of the junction points as Shapely Points.
 
-The file `example.py` show a basic usage of the library, importing a GeoJSON from an input file `example_input.geojson` composed of four self-intersecting rectangles ABCH, DEFG, CDKJ and ILGH (see figure below).
+The file `simple_example.py` show a basic usage of the library, importing a GeoJSON from an input file `examples/simple_example_input.geojson` composed of four self-intersecting rectangles ABCH, DEFG, CDKJ and ILGH (see figure below).
 
 ![Geometry of example_input.geojson](https://raw.githubusercontent.com/basteks/geojsonintersect/main/examples/simple_example_geometry.PNG)
 
 Using the `add_junctions` function adds the points I and J on the one hand, and K and L on the ther hand, respectively in the rectangles ABCH (which therefore becomes ABCJIH) and DEFG (which becomes DEFGLK)
+
+The file `dxf_import_example.py` show a more consistent usage of the library, importing a DXF file (currently you can choose between a thermal bridge from the file `examples/roof_thermal_bridge.dxf` and a window frame from the EN 10077-2 standard from the file `EN10077_H3_window_frame.dxf`. In this example, the dxf entities (currently only LwPolynies) are converted to a GeoJSON `FeatureCollection` on which this algorithm is applied. Then, a simple visualization tool is provided to show the final geometry and the junction points identified.
+
 
 ### Credits
 ---
@@ -32,3 +35,7 @@ This library is based on the [amazing Shapely library](https://github.com/Tobler
 This idea came from [a reflexion with Facundo Ferrín](https://github.com/fferrin/pytopojson/issues/7), the creator of the great [pytopojson](https://github.com/fferrin/pytopojson) library.
 
 Obvioulsy, it is also based on the work from [Mike Bostock](https://bost.ocks.org/mike/), the creator of [TopoJSON](https://github.com/topojson/)
+
+The importation of a dxf file in the `dxf_import_example.py` file is achieved via the [ezdxf library](https://ezdxf.mozman.at/)
+
+[Geopandas](https://geopandas.org/) and [Matplotlib](https://matplotlib.org/) are used for the vizualization
