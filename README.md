@@ -21,7 +21,7 @@ The file `geojsonintersect.py` only contains two functions :
 
 The file `example.py` show a basic usage of the library, importing a GeoJSON from an input file `example_input.geojson` composed of four self-intersecting rectangles ABCH, DEFG, CDKJ and ILGH (see figure below).
 
-![Geometry of example_input.geojson](https://raw.githubusercontent.com/basteks/geojsonintersect/main/example/example_geometry.PNG)
+![Geometry of example_input.geojson](https://raw.githubusercontent.com/basteks/geojsonintersect/main/examples/example_geometry.PNG)
 
 Using the `add_junctions` function adds the points I and J on the one hand, and K and L on the ther hand, respectively in the rectangles ABCH (which therefore becomes ABCJIH) and DEFG (which becomes DEFGLK)
 
